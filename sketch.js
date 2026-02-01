@@ -6,5 +6,5 @@ function setup() {
 function draw() {
   //set bg color to grey
   background(220);
-  circle (mouseX, mouseY, width*0.02)
+  circle (min(max(mouseX, 50), width-50), min(max(mouseY, 50), height-50), width*0.02)
 }
